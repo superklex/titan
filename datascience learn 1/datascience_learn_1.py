@@ -53,3 +53,10 @@ ufo.columns
 ufo_cols = ["city", "colors", "shape", "state", "time"]
 ufo.columns = ufo_cols
 ufo.head()
+
+#you can also replace specific characters in a column
+ufo=pd.read_csv("http://bit.ly/uforeports")
+ufo.columns
+#here, we are replacing the space with _
+ufo.columns = ufo.columns.str.replace(" ","_")
+ufo.columns
