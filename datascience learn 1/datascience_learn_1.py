@@ -82,3 +82,15 @@ movies.head()
 movies.drop([0,1,3,5], axis= 0, inplace =True)
 movies.head()
 movies.shape
+#sorting the movies according to length
+movies.length.sort_values()
+#could also be written as 
+movies["length"].sort_values()
+#pandas automatically sort in ascending order, to do the reverse, specify
+movies.length.sort_values(ascending = False) #this wont affect the original dataframe as usual because inplace was not set
+movies.sort_values(["length"], ascending =True, inplace=True)
+movies.columns
+movies.head()
+movies.iloc[0,2]# for row 0 in column 2
+movies.iloc[:, 0:2]# all rows from column 0 till 2
+
