@@ -60,3 +60,25 @@ ufo.columns
 #here, we are replacing the space with _
 ufo.columns = ufo.columns.str.replace(" ","_")
 ufo.columns
+#checking if there is a keyword in a particular column
+ufo.columns
+ufo.city
+ufo.city.str.contains("nigeria")
+
+#While cleaning data, you might need to remove(drop) some columns or rows
+movie_user
+movie_user.shape #just to check the number of rows and columns
+movie_user.drop("zip_code", axis=1)
+#you have to specify the axis if it is abou the column
+#also, it would not reflect on the real dataframe until inplace is true
+movie_user.drop("gender", axis=1, inplace=True)
+movie_user
+movie_user.shape
+
+movies
+movies.columns
+movies.drop(["title","actors_list"], axis=1, inplace=True)
+movies.head()
+movies.drop([0,1,3,5], axis= 0, inplace =True)
+movies.head()
+movies.shape
