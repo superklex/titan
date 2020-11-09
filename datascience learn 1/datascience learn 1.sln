@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "datascience learn 1", "datascience learn 1.pyproj", "{43BA5011-30D4-47E1-8C7E-522CC5AD5560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43BA5011-30D4-47E1-8C7E-522CC5AD5560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43BA5011-30D4-47E1-8C7E-522CC5AD5560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F55E6BB5-BA40-4212-AB8C-B06AFBDC794E}
+	EndGlobalSection
+EndGlobal
