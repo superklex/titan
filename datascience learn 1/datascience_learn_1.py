@@ -40,8 +40,6 @@ movies = pd.read_csv("http://bit.ly/imdbratings")
 movies
 movies.describe()
 movies.columns
-movies.rows
-
 #to replace all or some of the columns in a data frame.
 #you can use a dictionary to specify changes to one or more column names using key would be the old column name while value will be the new column name
 #you can create a new list variable to replace the total columns
@@ -94,3 +92,13 @@ movies.head()
 movies.iloc[0,2]# for row 0 in column 2
 movies.iloc[:, 0:2]# all rows from column 0 till 2
 
+movies.loc[movies["genre"]=="Drama"]# all rows from column 0 till 2
+
+booleans =[]
+for length in movies.length:
+    if length >= 195:
+        booleans.append(True)
+    else:
+         booleans.append(False)
+
+booleans[1:7]
