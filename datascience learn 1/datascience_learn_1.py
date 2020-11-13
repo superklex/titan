@@ -92,7 +92,9 @@ movies.head()
 movies.iloc[0,2]# for row 0 in column 2
 movies.iloc[:, 0:2]# all rows from column 0 till 2
 
-movies.loc[movies["genre"]=="Drama"]# all rows from column 0 till 2
+movies.loc[movies["genre"]=="Drama"]
+# all rows from column 0 till 2// 
+# the last part is the condition to parse//
 
 booleans =[]
 for length in movies.length:
@@ -101,4 +103,22 @@ for length in movies.length:
     else:
          booleans.append(False)
 
+#we could also do
+boolea = movies.length >= 195
+boolea.head
+()
+
 booleans[1:7]
+movie_length = pd.Series(booleans)#creating a new dataframe series
+movie_length.head()
+movie_length
+movies["movie_length"] = movie_length
+movies
+
+#using just 2 columns when reading in a dataframe
+orders = pd.read_table("http://bit.ly/chiporders", usecols=["item_name", "quantity"])
+orders.head()
+
+#you can also read in cols using the index numbers
+movies = pd.read_table("http://bit.ly/chiporders", usecols=[2,4])
+movies.head()
