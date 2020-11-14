@@ -60,8 +60,8 @@ ufo.columns = ufo.columns.str.replace(" ","_")
 ufo.columns
 #checking if there is a keyword in a particular column
 ufo.columns
-ufo.city
-ufo.city.str.contains("nigeria")
+ufo.City
+ufo.City.str.contains("nigeria")
 
 #While cleaning data, you might need to remove(drop) some columns or rows
 movie_user
@@ -91,7 +91,7 @@ movies.columns
 movies.head()
 movies.iloc[0,2]# for row 0 in column 2
 movies.iloc[:, 0:2]# all rows from column 0 till 2
-
+movies.head
 movies.loc[movies["genre"]=="Drama"]
 # all rows from column 0 till 2// 
 # the last part is the condition to parse//
@@ -120,5 +120,6 @@ orders = pd.read_table("http://bit.ly/chiporders", usecols=["item_name", "quanti
 orders.head()
 
 #you can also read in cols using the index numbers
-movies = pd.read_table("http://bit.ly/chiporders", usecols=[2,4])
-movies.head()
+chiporder = pd.read_table("http://bit.ly/chiporders", usecols=[2,4])
+
+chiporder.head()
